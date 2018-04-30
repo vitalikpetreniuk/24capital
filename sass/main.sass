@@ -1,0 +1,960 @@
+$acsent: #1f2840
+$grey: #818695
+$white: #fff
+$gradient: linear-gradient(123deg, rgba(17,211,174,1) 0%, rgba(23,184,185,1) 23%, rgba(45,95,224,1) 100%)
+
+@mixin image
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+//var
+
+/*default style*/
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+.body
+  font-family: 'PoppinsRegular', sans-serif
+  background: $acsent
+  padding: 0
+  margin: 0
+  font-size: 20px
+  position: relative
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+  font-family: 'PoppinsBold', sans-serif
+ul, li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+a
+  display: block
+  text-decoration: none
+  transition: all 0.3s ease
+  cursor: pointer
+  &:hover
+    text-decoration: none
+a[href^="tel"]
+  color: $white
+.image
+  position: relative
+img
+  max-width: 100%
+  height: auto
+  display: inline-block
+*:focus, *:hover, *.active, *:active, *:visited, button, input, select
+  outline: 0 !important
+  text-decoration: none !important
+  box-shadow: none !important
+button, a
+  cursor: pointer
+section
+  position: relative
+/*default style*/
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  width: 258px
+  height: 56px
+  .text
+    display: block
+    background: $acsent
+    text-transform: uppercase
+    font-family: "PoppinsSemiBold", sans-serif
+    width: 100%
+    height: 100%
+    line-height: 60px
+    color: $white
+    border-radius: 7px
+    text-align: center
+  .border
+    position: absolute
+    top: -2px
+    left: -2px
+    height: 60px
+    width: calc(100% + 4px)
+    z-index: -1
+    background: $gradient
+    border-radius: 9px
+.btn:hover .text
+  background: transparent
+.menu-slide-block
+  display: none
+  overflow-x: hidden
+  overflow-y: auto
+header .mobile-nav .logo.logo-mini
+  display: none
+.logo
+  margin-top: 20px
+.header
+  position: relative
+  z-index: 100
+.mobile-nav
+  background: transparent
+  display: none
+  width: 100%
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 300
+  &.fixed
+    background: url("../images/mobile_bg.png") no-repeat center
+    background-size: cover
+  .btn-menu
+    width: 38px
+    height: 38px
+    position: absolute
+    left: 30px
+    top: 36px
+    span
+      display: block
+      width: 100%
+      height: 5px
+      border-radius: 2px
+      background: $white
+      & + span
+        margin-top: 8px
+    &:hover
+      span
+        opacity: 0.8
+  .btn-close
+    display: none
+    position: absolute
+    left: 30px
+    top: 36px
+    width: 36px
+    height: 36px
+  .logo img
+    width: 200px
+    padding-top: 20px
+    padding-bottom: 15px
+  ul
+    padding-bottom: 250px
+    width: 100%
+    opacity: 0
+    transition:  opacity 0.4s ease-in-out
+    li
+      height: 68px
+      position: relative
+      text-align: center
+      border-bottom: 1px solid rgba(255,255,255,0.6)
+      &:hover
+        background: $gradient
+    a
+      color: $white
+      font-size: 16px
+      text-transform: uppercase
+      line-height: 68px
+  &.show
+    background: url("../images/mobile_hero_bg.jpg") no-repeat center
+    background-size: cover
+    height: 100vh
+    overflow-x: hidden
+    overflow-y: auto
+    ul
+      opacity: 1
+      display: block
+    .btn-close
+      display: block
+    .btn-menu
+      display: none
+.main-nav
+  ul
+    display: flex
+    width: 100%
+    margin-left: 44px
+    li
+      height: 90px
+      position: relative
+      padding-top: 26px
+    a
+      color: $white
+      font-size: 16px
+      text-transform: uppercase
+      line-height: 90px
+      padding: 0 36px
+      &::before
+        content: none
+        width: 100%
+        height: 5px
+        position: absolute
+        top: 0
+        left: 0
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+        background: linear-gradient(123deg, rgba(17,211,174,1) 0%, rgba(23,184,185,1) 23%, rgba(45,95,224,1) 100%)
+        transition: all 0.3s ease
+      &:hover::before
+        content: ''
+
+.hero
+  padding-top: 115px
+  margin-top: -115px
+  position: relative
+  z-index: 0
+  background: url("../images/hero.jpg")
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  h1
+    color: #ffffff
+    font-size: 86px
+    white-space: nowrap
+    text-transform: uppercase
+    margin-bottom: 30px
+  .description
+    font-size: 48px
+    color: $acsent
+    white-space: nowrap
+    font-family: 'PoppinsSemiBold',sans-serif
+    text-transform: uppercase
+    height: 100%
+    display: flex
+    align-items: flex-end
+    padding-bottom: 90px
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: -180px
+      bottom: 16%
+      width: 104px
+      height: 70px
+      background-image: url(../images/arrow_drow.png)
+      background-repeat: no-repeat
+  .btn
+    margin-bottom: 20px
+    & + .btn
+      margin-bottom: 92px
+  .info
+    width: 70%
+.text-white
+  color: $white
+  line-height: 30px
+.hero__left-col
+  height: 100%
+  padding-top: 120px
+  padding-bottom: 420px
+  color: #fff
+
+.animation-block
+  position: absolute
+  top: 16%
+  left: 32%
+  width: 80%
+  &::before
+    content: ''
+    position: absolute
+    bottom: 40%
+    z-index: -1
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 130%
+    height: 426px
+    background: url("../images/animation_bg.png") no-repeat center
+    background-size: contain
+  .animation-case
+    &:nth-child(2)
+      position: absolute
+      top: 7%
+      width: 90%
+      left: 50%
+      transform: translate(-50%,0)
+      opacity: 0
+      transition: opacity 0.2s ease-in-out, top 0.5s ease-in-out .2s
+      z-index: 2
+    &:nth-child(3)
+      position: absolute
+      top: 20%
+      width: 90%
+      left: 50%
+      transform: translate(-50%,0)
+      opacity: 0
+      transition: opacity 0.2s ease-in-out, top 0.5s ease-in-out .2s
+      z-index: 1
+    &:last-child
+      position: absolute
+      top: 34%
+      width: 90%
+      left: 50%
+      transform: translate(-50%,0)
+      opacity: 0
+      transition: opacity 0.2s ease-in-out, top 0.5s ease-in-out .2s
+      z-index: 0
+    &.move
+      &:nth-child(2)
+        top: 10.5%
+        opacity: 1
+      &:nth-child(3)
+        top: 24%
+        opacity: 1
+      &:last-child
+        top: 38%
+        opacity: 1
+
+.trust
+  padding: 90px 0
+  background: url("../images/people_bg.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  h2
+    color: #ffffff
+    font-size: 80px
+    white-space: nowrap
+    text-transform: uppercase
+    margin-bottom: 30px
+.trust__right-col
+  border-left: 1px solid $white
+  padding: 36px 50px
+  background: linear-gradient(267deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 100%)
+.success
+  background: url("../images/block_500.png")no-repeat
+  background-position: center 70%
+  background-size:  auto
+  color: $white
+  text-align: center
+  padding-bottom: 136px
+  h2
+    font-size: 36px
+    text-transform: uppercase
+    margin-bottom: 356px
+  &::before
+    content: ''
+    width: 70px
+    height: 104px
+    background-image: url(../images/brend_linck_3.png)
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+    top: -30px
+    left: 50%
+    transform: translateX(-50%)
+.brend-lincks
+  display: flex
+  width: 100%
+  margin-top: 50px
+  margin-bottom: 100px
+  position: relative
+  &.left
+    justify-content: flex-start
+    li:not(:last-child)
+      padding-right: 80px
+  &.right
+    justify-content: flex-end
+    li:not(:first-child)
+      padding-left: 80px
+.success__descr
+  line-height: 30px
+  width: 56%
+  margin: auto
+.partners
+  background-image: url(../images/partners_bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center top
+  margin-top: -240px
+  padding-top: 260px
+  padding-bottom: 60px
+  .container
+    z-index: 10
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 50%
+    height: 100%
+    z-index: 1
+    background-image: url(../images/partner_left.png)
+    background-repeat: no-repeat
+    background-position: center center
+    -webkit-background-size: auto
+    background-size: auto
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 50%
+    height: 100%
+    z-index: 1
+    background-image: url(../images/partner_right.png)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: auto
+  .btn
+    .text
+      background: $white
+      color: $acsent
+    &:hover
+      .text
+        background: $gradient
+        color: $white
+.partners__subtitle
+  color: $grey
+  text-align: center
+  font-size: 24px
+  font-family: "PoppinsLight", sans-serif
+  text-transform: uppercase
+  letter-spacing: 0.6em
+  line-height: 36px
+  padding-bottom: 80px
+  padding-top: 40px
+.partners__title
+  text-transform: uppercase
+  color: $acsent
+  font-size: 60px
+  margin-bottom: 40px
+.partners--left
+  text-align: right
+  border-right: 2px solid #13c7b3
+  padding-right: 60px
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  padding-bottom: 60px
+.partners--right
+  padding-left: 60px
+  padding-bottom: 60px
+.feedback
+  background-image: url(../images/feedback_bg.png)
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  background-position: center top
+  padding-top: 300px
+  padding-bottom: 190px
+  margin-top: -260px
+  z-index: 1
+  .container
+    z-index: 1
+.feedback__holder
+  width: 66%
+  margin: auto
+  margin-bottom: 4px
+.feedback__title
+  font-size: 48px
+  color: $white
+  text-align: center
+  padding-bottom: 35px
+  &::after
+    content: ''
+    position: absolute
+    right: 10%
+    top: 0
+    z-index: 1
+    width: 43px
+    height: 64px
+    background: url(../images/form_marker.png) no-repeat center
+    background-size: contain
+.feedback__form
+  width: 100%
+  text-align: center
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  button
+    background: transparent
+    border: none
+    margin-right: 20px
+    &:last-child
+      margin-left: 20px
+      margin-right: 0
+    &.btn
+      font-size: 18px
+      width: auto
+    .text
+      padding: 0 30px
+      line-height: 56px
+  .flex-cont
+    height: 105px
+    width: 100%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 85px
+  input
+    width: 46%
+    background: transparent
+    height: 50px
+    line-height: 50px
+    border: 0
+    border-bottom: 1px solid rgba(255,255,255,0.8)
+    font-size: 16px
+    color: $white
+    font-family: "PoppinsRegular", sans-serif
+  textarea
+    color: $white
+    width: 46%
+    background: transparent
+    line-height: 1.8em
+    padding-top: 16px
+    height: 105px
+    border: 0
+    border-bottom: 1px solid rgba(255,255,255,0.8)
+    font-size: 16px
+.footer
+  padding-top: 18px
+  padding-bottom: 50px
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 2
+.social-lincks
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 33px
+  a
+    height: 26px
+    width: 22px
+    svg
+      height: 100%
+    path
+      fill: rgba(82,100,147,0.4)
+    &:hover path
+      fill: rgba(255,255,255,0.4)
+.copyright, .create-by
+  line-height: 33px
+  color: #526493
+.create-linck
+  display: flex
+  justify-content: flex-end
+  line-height: 33px
+.create-by
+  display: flex
+  align-items: center
+  span
+    padding-right: 8px
+    font-size: 12px
+
+.about
+  color: $white
+  line-height: 30px
+  padding-bottom: 140px
+  background: url("../images/about_bg.jpg") no-repeat center
+  background-size: cover
+  padding-top: 110px
+  margin-top: -110px
+.about__title
+  font-size: 90px
+  text-transform: uppercase
+  text-align: center
+  margin-top: 90px
+  margin-bottom: 60px
+.about__content
+  margin-bottom: 70px
+  &::after
+    content: ''
+    display: table
+    clear: both
+  p:not(:last-child)
+    margin-bottom: 32px
+.about__image
+  width: 40%
+  float: left
+  padding-left: 20px
+  padding-right: 70px
+  position: relative
+  img
+    transform: translate(-20px, -36px)
+  &::before
+    content: ""
+    width: 100%
+    height: 100%
+    background-image: url(../images/about_img_before.png)
+    background-repeat: no-repeat
+    background-size: contain
+    position: absolute
+.about__subtitle
+  padding-top: 52px
+  font-size: 30px
+  margin-bottom: 32px
+.about__frame
+  border-radius: 9px
+  border: 1px dashed #13c7b3
+  padding: 34px
+  margin-top: 90px
+  margin-bottom: 40px
+  clear: both
+.about__benefits, .iso__content
+  display: flex
+  justify-content: space-between
+  li
+    flex-basis: 30%
+    text-align: center
+    color: $white
+.benefits__title, .iso-item__title
+  margin-top: 30px
+  font-size: 30px
+  font-family: "PoppinsRegular", sans-serif
+  text-transform: uppercase
+  line-height: 30px
+  margin-bottom: 30px
+
+.muve
+  .partners__subtitle
+    font-size: 30px
+.muve, .iso
+  background: $white
+  &::before
+    content: ''
+    width: 100%
+    height: 280px
+    position: absolute
+    bottom: 99%
+    background-image: url(../images/muve_bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center bottom
+    z-index: 0
+.muve__title
+  font-family: 'PoppinsSemiBold', sans-serif
+  font-size: 60px
+  text-transform: uppercase
+  text-align: center
+  color: $acsent
+  margin-bottom: 68px
+.muve__subtitle
+  text-align: center
+  margin-bottom: 60px
+.muve__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  color: #4d5365
+  line-height: 30px
+  text-align: justify
+  margin-bottom: 118px
+  width: 100%
+  .muve__item
+    padding-left: 45px
+    flex-basis: 24%
+    position: relative
+    line-height: 46px
+    img
+      position: absolute
+      left: 0
+      top: 50%
+      margin-top: -23px
+.muve__iframe
+  width: 82%
+  margin: auto
+  position: relative
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    background: $gradient
+    opacity: 0.6
+    position: absolute
+    border-radius: 16px
+    top: 0
+    left: 0
+  &:hover::before
+    content: none
+  iframe
+    width: 100%
+    height: 490px
+    border-radius: 16px
+.btn__muve
+  position: absolute
+  top: 50%
+  left: 50%
+  z-index: 10
+  transform: translate(-50%,-50%)
+.contacts
+  background: $white
+  padding-bottom: 200px
+  &::after
+    content: ''
+    height: calc(100% + 280px)
+    width: 76%
+    background-image: url(../images/contacts_bg.png)
+    position: absolute
+    right: 0
+    bottom: 0
+    z-index: 0
+    background-size: auto
+    background-position: right top
+    background-repeat: no-repeat
+.contact__info
+  white-space: nowrap
+  line-height: 60px
+  color: #4d5365
+  address
+    font-style: normal
+.iso
+  padding-top: 30px
+  padding-bottom: 84px
+.iso__content
+  li
+    color: #4d5365
+    padding: 0
+    h4
+      font-family: "PoppinsRegular", sans-serif
+    .image
+      height: 130px
+      width: 100%
+      img
+        height: 100%
+        width: auto
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate( -50%,-50%)
+.iso-form
+  background: $gradient
+  padding: 58px 0
+  color: $white
+.iso__form
+  .flex-cont
+    display: flex
+    height: auto
+    flex-wrap: wrap
+    justify-content: space-between
+  input
+    width: 46%
+    background: transparent
+    height: 50px
+    line-height: 50px
+    border: 0
+    border-bottom: 1px solid rgba(255,255,255,0.8)
+    font-size: 16px
+    color: $white
+    font-family: "PoppinsRegular", sans-serif
+    &::placeholder
+      color: rgba(255,255,255,0.5)
+      font-family: "PoppinsRegular", sans-serif
+  textarea
+    color: $white
+    width: 100%
+    background: transparent
+    height: 50px
+    margin-top: 50px
+    padding-top: 12px
+    border: 0
+    border-bottom: 1px solid rgba(255,255,255,0.8)
+    &::placeholder
+      color: rgba(255,255,255,0.5)
+      font-family: "PoppinsRegular", sans-serif
+  button
+    background: transparent
+    border: none
+    margin: auto
+    margin-top: 50px
+    .text
+      background: $white
+      color: $acsent
+      &:hover
+        background: $acsent
+        color: $white
+.iso-form
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url(../images/iso_form_bg.png)
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: 5% center
+    position: absolute
+    top: 0
+    left: 0
+.iso__title
+  text-align: center
+  font-size: 36px
+  text-transform: uppercase
+  margin-bottom: 20px
+.syndication
+  background: $white
+  color: $acsent
+  padding-top: 72px
+  padding-bottom: 100px
+  text-align: justify
+  line-height: 30px
+  .container
+    z-index: 2
+  .btn
+    margin: auto
+    margin-top: 52px
+    margin-bottom: 4px
+    .text
+      background: $gradient
+    &:hover
+      .text
+        background: $white
+        color: $acsent
+
+
+.syndication__title
+  margin-bottom: 58px
+  font-size: 72px
+  text-transform: uppercase
+  text-align: center
+  font-family: "PoppinsSemiBold", sans-serif
+
+.syndication__gradient-text
+  text-align: center
+  margin-bottom: 54px
+  span
+    text-transform: uppercase
+    font-size: 36px
+    text-align: center
+    font-family: "PoppinsSemiBold", sans-serif
+    background: $gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    color: #4d5365
+
+.merchants
+  line-height: 30px
+  text-align: justify
+  background-image: url(../images/merch_bg.png)
+  background-repeat: no-repeat
+  background-position: center top
+  background-size: auto
+  padding-bottom: 130px
+  .container
+    z-index: 2
+  .btn
+    margin: auto
+    margin-bottom: 4px
+    .text
+      background: $white
+      color: $acsent
+    &:hover
+      .text
+        background: transparent
+        color: $white
+.merch__list
+  display: flex
+  flex-wrap: wrap
+  padding-top: 50px
+  padding-bottom: 100px
+.merch__item
+  position: relative
+  padding-left: 100px
+  padding-top: 30px
+  img
+    position: absolute
+    left: 0
+    top: 0
+  &::after
+    content: ''
+    position: absolute
+    top: 5%
+  &:nth-child(1)
+    &::after
+      width: 460px
+      height: 311px
+      left: 80%
+      background: url(../images/item_line_1.png) no-repeat center
+      background-size: contain
+  &:nth-child(2)
+    &::after
+      width: 400px
+      height: 200px
+      right: 105%
+      top: 18%
+      background: url(../images/item_line_2.png) no-repeat center
+      background-size: contain
+  &:nth-child(3)
+    &::after
+      width: 460px
+      height: 290px
+      left: 80%
+      background: url(../images/item_line_4.png) no-repeat center
+      background-size: contain
+  &:nth-child(odd)
+    flex-basis: 40%
+  &:nth-child(even)
+    margin-left: 26px
+    margin-top: 310px
+    flex-basis: calc(60% - 26px)
+.merch-list__title
+  font-family: 'PoppinsSemiBold', sans-serif
+  font-size: 60px
+  text-transform: uppercase
+  color: $acsent
+  margin-bottom: 50px
+.pop-up
+  display: flex
+  align-items: center
+  background: rgba(0,0,0,0.8)
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  overflow-x: hidden
+  overflow-y: auto
+  opacity: 0
+  z-index: -1
+  transition: opacity 0.4s ease-in-out
+  .feedback__holder
+    width: 50%
+    height: auto
+    background: $gradient
+    padding: 65px 92px
+    color: $white
+    border-radius: 16px
+    position: relative
+    margin-top: -100%
+    transition: margin-top .8s ease-in-out .1s
+    margin-bottom: 4px
+    .iso__form
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        z-index: 0
+        background-image: url(../images/iso_form_bg.png)
+        background-repeat: no-repeat
+        background-size: 134%
+        background-position: right top
+  .iso__title
+    font-family: 'PoppinsSemiBold', sans-serif
+  &.show
+    z-index: 200
+    opacity: 1
+    .feedback__holder
+      margin-top: 0
+.iso__subtitle
+  text-align: center
+  margin-bottom: 70px
+.btn-close
+  position: absolute
+  right: 25px
+  top: 25px
+  width: 18px
+  height: 18px
+  z-index: 300
+  span
+    width: 130%
+    height: 2px
+    background: $white
+    display: block
+    transform: rotate(-45deg)
+    margin-top: 14px
+    margin-left: -3px
+    & + span
+      transform: rotate(45deg)
+      margin-top: -2px
+  &:hover
+    span
+      opacity: 0.6
+
+
+

@@ -1,0 +1,871 @@
+$desktop: "only screen and (max-width: 1681px)"
+$custome-desktop: "only screen and (max-width: 1440px) and (min-width: 1024px)"
+$custome-laptop: "only screen and (max-width: 1279px)"
+$laptop: "only screen and (max-width: 1199px)"
+$middle: "only screen and (max-width: 992px)"
+$tablet: "only screen and (max-width: 768px)"
+$range-tablet: "only screen and (min-width: 578px) and (max-width: 767px)"
+$range-laptop: "only screen and (min-width: 993px) and (max-width: 1280px)"
+$range-mobile: "only screen and (min-width: 440px) and (max-width: 578px)"
+$phone: "only screen and (max-width: 578px)"
+$portrait: "only screen and (orientation:portrait)"
+$custom-bootstrap: "only screen and (min-width: 1279px)"
+$acsent: #1f2840
+$grey: #818695
+$white: #fff
+$gradient: linear-gradient(123deg, rgba(17,211,174,1) 0%, rgba(23,184,185,1) 23%, rgba(45,95,224,1) 100%)
+
+@media #{$desktop}
+  .hero
+    background-size: 150%
+  //pop_up
+  .pop-up .feedback__holder
+    width: 66%
+  //home
+  .hero h1
+    font-size: 80px
+  .hero__left-col
+    padding-top: 85px
+    padding-bottom: 140px
+  .hero .btn + .btn
+    margin-bottom: 54px
+  .hero .description
+    font-size: 36px
+    padding-bottom: 50px
+    margin-left: -100px
+    &::before
+      left: -120px
+      bottom: 10%
+  .animation-block
+    width: 70%
+    top: 10%
+    left: 22%
+  .hero .info
+    width: 53%
+    line-height: 24px
+    font-size: 16px
+  .trust
+    background-position: -200px center
+  .partners
+    background-size: auto
+  //partners
+  .muve__title
+    font-size: 60px
+  .iso-form:before
+    background-size: 100%
+    background-position: -30px 24%
+
+  //contacts
+  .about__title
+    font-size: 80px
+  .contacts
+    &::after
+      height: calc(100% + 180px)
+      width: 86%
+      background-size: contain
+    .muve__title
+      text-align: left
+      white-space: nowrap
+  .animation-block
+    width: 65%
+    top: 10%
+    left: auto
+    right: 0
+  .animation-block::before
+    width: 105%
+@media #{$custome-desktop}
+
+@media #{$custome-laptop}
+  .hero .description
+    font-size: 30px
+  .contacts
+    &::after
+      height: calc(100% + 130px)
+      width: 90%
+@media #{$laptop}
+  .main-nav ul
+    margin-left: 20px
+    justify-content: space-between
+    a
+      padding: 0 20px
+  .trust h2
+    font-size: 66px
+  .feedback__holder
+    width: 100%
+  //contacts
+  .contacts
+    padding-bottom: 150px
+    &::after
+      height: calc(100% + 130px)
+      width: 86%
+      background-size: contain
+    .muve__title
+      margin-bottom: 40px
+
+
+@media #{$middle}
+  .animation-block::before
+    width: 100%
+    bottom: 20%
+  .hero .btn + .btn
+    margin-bottom: 14px
+
+  //pop_up
+  .pop-up .feedback__holder
+    width: 80%
+    padding-right: 32px
+    padding-left: 32px
+  //about
+  .about__subtitle
+    padding-top: 14px
+    font-size: 18px
+    margin-bottom: 30px
+  .benefits__title
+    font-size: 25px
+    line-height: 26px
+  .muve__iframe
+    width: 88%
+    height: 360px
+    iframe
+      height: 360px
+  .btn__muve
+    width: 80px
+  .muve
+    .partners__subtitle
+      padding-bottom: 20px
+      font-size: 22px
+  .muve__subtitle
+    margin-bottom: 20px
+  //merchans
+  .merchants
+    background-size: 80%
+  .merch-list__title
+    font-size: 42px
+  .merch__item
+    padding-left: 80px
+  .merch__item:nth-child(odd)
+    flex-basis: 42%
+  .merch__item:nth-child(even)
+    margin-left: 18px
+    flex-basis: calc(58% - 18px)
+  .merch__item:nth-child(1)::after, .merch__item:nth-child(3)::after
+    width: 360px
+    left: 90%
+  .merch__item:nth-child(2)::after
+    width: 290px
+
+  //partners
+  .muve__title
+    font-size: 48px
+    margin-bottom: 50px
+  //contacts
+  .about__title
+    font-size: 60px
+    margin-top: 40px
+    margin-bottom: 0
+  .contacts
+    &::after
+      width: 120%
+      height: 520px
+      bottom: auto
+      top: -100px
+    .muve__title
+      margin-top: 370px
+      text-align: center
+    .contact__info
+      text-align: center
+
+  //home
+  .partners
+    &::after, &::before
+      content: none
+  .trust h2
+    font-size: 80px
+  .logo
+    display: none
+  .main-content
+    padding-top: 105px
+  .body
+    font-size: 16px
+  header
+    .mobile-nav
+      display: block
+      .btn-close
+        display: none
+      .logo
+        display: block
+        margin-top: 0
+    .open
+      .btn-close
+        display: block
+        z-index: 300
+    .main-nav
+      display: none
+  .logo
+    text-align: center
+    img
+      width: 180px
+  .copyright
+    font-size: 12px
+  .feedback__title
+    font-size: 36px
+  .partners__subtitle
+    font-size: 18px
+    padding-bottom: 0
+  .partners__title
+    font-size: 36px
+    margin-bottom: 36px
+    margin-top: 200px
+  .partners
+    background-image: url(../images/partners_bg_tablet.png)
+    background-position: center top
+    background-size: cover
+    padding-top: 100px
+  .partners--left
+    padding-top: 60px
+    background-image: url(../images/partner_left.png)
+    background-position: 80% 20%
+    background-repeat: no-repeat
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 3px
+      height: 66px
+      background: #fff
+      z-index: 10
+  .partners--right
+    padding-top: 60px
+    background-image: url(../images/partner_right.png)
+    background-position: 70px 20%
+    background-repeat: no-repeat
+  .success__descr
+    width: 80%
+    padding-bottom: 126px
+  .success
+    background-size: 120%
+    background-position: center 36%
+  .success h2
+    margin-bottom: 260px
+    font-size: 24px
+  .brend-lincks
+    margin-bottom: 60px
+    img
+      max-width: 60%
+    &.left li:not(:last-child)
+      padding-right: 20px
+    &.right li:not(:first-child)
+      padding-left: 20px
+  .trust
+    background-position: -80px center
+    padding: 54px 0 80px
+    h2
+      font-size: 55px
+    br
+      display: none
+  .trust__right-col
+    background: transparent
+    border: none
+    text-align: center
+    padding: 0
+  .success::before
+    top: -40px
+  .hero h1
+    font-size: 60px
+  .hero__left-col
+    padding-top: 40px
+    padding-bottom: 240px
+  .hero .info
+    width: 100%
+    font-size: 17px
+    line-height: 26px
+  .hero .description
+    font-size: 24px
+  .hero .description::before
+    left: -120px
+    width: 80px
+    background-size: contain
+  .animation-block
+    left: auto
+    right: 4%
+    top: 10%
+  //.animation-block::before
+  //  width: 100%
+  //  bottom: 0%
+
+
+@media #{$phone}
+  //pop-up
+  .pop-up
+    align-items: flex-start
+    .feedback__holder
+      padding-left: 15px
+      padding-right: 15px
+      width: 100%
+      border-radius: 0
+  //about
+  .about__content
+    margin-bottom: 130px
+  .about__image
+    width: 80%
+    margin: auto
+    float: none
+    padding-left: 0
+    padding-right: 0
+    padding-top: 40px
+    margin-bottom: 30px
+    img
+      transform: translate(-14px, -26px)
+  .about__content
+    p
+      font-size: 14px
+      text-align: justify
+      line-height: 20px
+      &:not(:last-child)
+        margin-bottom: 20px
+  .about__benefits
+    flex-wrap: wrap
+    li
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 30px
+
+  .muve .partners__subtitle
+    font-size: 14px
+    letter-spacing: 0.2em
+    line-height: 18px
+  .muve__list
+    margin-bottom: 30px
+    .muve__item
+      flex-basis: 100%
+      padding-left: 60px
+      margin-left: 15px
+  .muve__iframe
+    width: calc(100% + 30px)
+    margin-right: -15px
+    margin-left: -15px
+    height: 250px
+    iframe
+      height: 250px
+      border-radius: 0
+    &::before
+      border-radius: 0
+  .btn__muve
+    width: 70px
+    top: 50%
+  //merchants
+  .merchants
+    background-image: none
+    padding-bottom: 76px
+  .merch__list
+    padding-top: 0
+    padding-bottom: 50px
+  .merch__item
+    padding-left: 60px
+
+  .merch__item:nth-child(odd)
+    margin-top: 20px
+    flex-basis: 100%
+  .merch__item:nth-child(even)
+    margin-top: 20px
+    margin-left: 0
+    flex-basis: 100%
+  .merch__item img
+    top: 15px
+    width: 48px
+  .merch__item:nth-child(n):not(:last-child)::after
+    width: 0
+    height: 60%
+    left: 24px
+    top: auto
+    bottom: -15px
+    background: none
+    border-left: 3px dashed #ebebeb
+
+  //partners
+  .syndication__gradient-text
+    margin-bottom: 20px
+    span
+      font-size: 24px
+      margin-bottom: 34px
+      position: relative
+      &:not(:last-child)::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 0
+        border-bottom: 2px dotted #296dda
+    .sep
+      font-size: 0
+      display: block
+      line-height: 0
+      margin: 5px
+      &:not(:last-child)::after
+        display: none
+
+  .iso
+    padding-bottom: 32px
+  .iso-form
+    padding-top: 25px
+    padding-bottom: 30px
+  .iso__subtitle
+    font-size: 14px
+    line-height: 24px
+    margin-bottom: 22px
+  .iso__title
+    font-size: 22px
+    margin-bottom: 16px
+  .iso__form input
+    width: 100%
+    height: 42px
+    line-height: 42px
+  .about__title
+    line-height: 30px
+    width: 80%
+    margin: auto
+    margin-top: 0
+  .about
+    padding-bottom: 90px
+    padding-top: 120px
+    margin-top: -120px
+  .muve__title
+    font-size: 36px
+    margin-bottom: 20px
+  .iso__content
+    flex-wrap: wrap
+    li
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 30px
+  //contacts
+  .about__title
+    font-size: 36px
+  .contacts
+    padding-bottom: 50px
+    &::after
+      width: 164%
+      height: 400px
+    .muve__title
+      font-size: 36px
+      margin-top: 250px
+      margin-bottom: 24px
+    .contact__info
+      font-size: 16px
+      line-height: 38px
+
+
+  //partners
+  .partners
+    .partners__subtitle
+      padding-top: 46px
+      font-size: 16px
+      letter-spacing: 0.3em
+  .partners__title
+    font-size: 30px
+    text-align: center
+    margin-bottom: 20px
+    margin-top: 150px
+  .partners--left
+    border: none
+    padding-right: 0
+    padding-bottom: 26px
+    padding-top: 0
+    align-items: center
+    background-position: center top
+    &::before
+      width: calc(100% + 30px)
+      height: 2px
+      top: 100%
+      left: 50%
+      transform: translate(-50%, 0)
+      background: $gradient
+  .partners--right
+    padding-left: 0
+    padding-bottom: 26px
+    padding-top: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-position: center top
+
+  .container
+    overflow: hidden
+  .hero
+    background: url("../images/mobile_hero_bg.jpg") no-repeat center
+    background-size: cover
+    h1
+      font-size: 36px
+      text-align: center
+    .btn
+      z-index: 1
+      margin: auto
+      margin-bottom: 20px
+    .info
+      color: $white
+      font-size: 12px
+      line-height: 17px
+      width: 70%
+      margin: auto
+    .description
+      display: block
+      font-size: 18px
+      width: 80%
+      margin: auto
+      margin-top: 86px
+      margin-bottom: 36px
+      white-space: normal
+      height: auto
+      padding: 0
+      &::before
+        width: 31px
+        height: 97px
+        background-image: url(../images/arrow_drow_mobile.png)
+        background-repeat: no-repeat
+        background-size: contain
+        left: -30px
+        top: -30px
+  .trust h2
+    font-size: 36px
+    white-space: normal
+    text-align: center
+  .trust__right-col .text-white
+    font-size: 14px
+    text-align: justify
+    line-height: 24px
+
+  .animation-block
+    display: none
+
+  .hero__left-col
+    padding-top: 20px
+    padding-bottom: 20px
+    text-align: center
+  .mobile-nav
+    .logo img
+      width: 180px
+      padding-top: 15px
+      padding-bottom: 15px
+    .btn-close, .btn-menu
+      left: 16px
+      top: 30px
+  .trust
+    background-position: -260px center
+
+  .brend-lincks.left li:not(:last-child), .brend-lincks.right li:not(:first-child)
+    padding-right: 0
+    padding-left: 0
+
+  .brend-lincks.right, .brend-lincks.left
+    justify-content: center
+    flex-wrap: wrap
+  .success
+    background-size: 150%
+    background-position: center
+    h2
+      margin-bottom: 160px
+  .success__descr
+    width: 90%
+    font-size: 12px
+    line-height: 22px
+    text-align: center
+    padding-bottom: 30px
+
+  .feedback__title
+    font-size: 30px
+    &::after
+     content:  none
+  .feedback__form
+    .flex-cont
+      height: auto
+    input, textarea
+      width: 100%
+      font-size: 12px
+    textarea
+      line-height: 1
+      margin-top: 20px
+      padding-top: 8px
+    button.btn
+      margin: 0
+      width: 100%
+      font-size: 14px
+      &:not(:last-child)
+        margin-bottom: 20px
+  .footer
+    width: 90%
+    text-align: center
+    padding-bottom: 15px
+    .col-sm-hidden
+      display: none !important
+    .row
+      flex-direction: column-reverse
+      .col-lg-2
+        margin-bottom: 20px
+  .social-lincks a
+    height: 30px
+  .feedback__form button .text
+    padding-right: 15px
+    padding-left: 15px
+  header
+    .mobile-nav
+      .logo.logo-desctop
+        display: none
+        img
+          display: none
+      .logo.logo-mini
+        display: block
+        img
+          width: 50px
+
+@media #{$range-tablet}
+  //merchans
+  .merchants
+    background-image: none
+    padding-bottom: 76px
+  .merch__list
+    padding-top: 0
+    padding-bottom: 50px
+  .merch__item
+    padding-left: 60px
+
+  .merch__item:nth-child(odd)
+    margin-top: 20px
+    flex-basis: 100%
+  .merch__item:nth-child(even)
+    margin-top: 20px
+    margin-left: 0
+    flex-basis: 100%
+  .merch__item img
+    top: 15px
+    width: 48px
+  .merch__item:nth-child(n):not(:last-child)::after
+    width: 0
+    height: 60%
+    left: 24px
+    top: auto
+    bottom: -15px
+    background: none
+    border-left: 3px dashed #ebebeb
+
+
+  .partners
+    .partners__subtitle
+      padding-top: 46px
+      font-size: 16px
+      letter-spacing: 0.3em
+  .partners__title
+    font-size: 30px
+    text-align: center
+    margin-bottom: 20px
+    margin-top: 150px
+  .partners--left
+    border: none
+    padding-right: 0
+    padding-bottom: 26px
+    padding-top: 0
+    align-items: center
+    background-position: center top
+    &::before
+      width: calc(100% + 30px)
+      height: 2px
+      top: 100%
+      left: 50%
+      transform: translate(-50%, 0)
+      background: $gradient
+  .partners--right
+    padding-left: 0
+    padding-bottom: 26px
+    padding-top: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-position: center top
+    .feedback__title
+      font-size: 30px
+    &::after
+      content:  none
+  .feedback__form
+    .flex-cont
+      height: auto
+    input, textarea
+      width: 100%
+      font-size: 12px
+    textarea
+      line-height: 1
+      margin-top: 20px
+      padding-top: 8px
+    button.btn
+      margin: 0
+      width: 100%
+      font-size: 14px
+      &:not(:last-child)
+        margin-bottom: 20px
+  .footer
+    width: 90%
+    text-align: center
+    padding-bottom: 15px
+    .col-sm-hidden
+      display: none !important
+    .row
+      flex-direction: column-reverse
+      .col-lg-2
+        margin-bottom: 20px
+  .social-lincks a
+    height: 30px
+  .trust h2
+    font-size: 36px
+    text-align: center
+  .hero h1
+    font-size: 48px
+  .hero .info
+    color: transparent
+  .hero__left-col
+    padding-top: 0
+    padding-bottom: 100px
+  .hero .description
+    text-align: left
+    font-size: 22px
+
+  .contacts
+    padding-bottom: 50px
+
+  .iso
+    padding-bottom: 32px
+  .iso-form
+    padding-top: 25px
+    padding-bottom: 30px
+  .iso__subtitle
+    font-size: 14px
+    line-height: 24px
+    margin-bottom: 22px
+  .iso__title
+    font-size: 22px
+    margin-bottom: 16px
+  .iso__form input
+    width: 100%
+    height: 42px
+    line-height: 42px
+
+  //pop_up
+  .pop-up .feedback__holder
+    width: 100%
+    border-radius: 0
+  .pop-up .iso__form input
+    width: 48%
+
+  .about__title
+    line-height: 30px
+    width: 80%
+    margin: auto
+    margin-top: 0
+  .about
+    padding-bottom: 90px
+    padding-top: 120px
+    margin-top: -120px
+  .muve__title
+    font-size: 36px
+    margin-bottom: 20px
+  .iso__content
+    flex-wrap: wrap
+    li
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 30px
+  .about__title
+    font-size: 36px
+  .about__benefits
+    flex-wrap: wrap
+    li
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 30px
+    .benefits__title
+      font-size: 25px
+      line-height: 26px
+  .muve .partners__subtitle
+    font-size: 14px
+    letter-spacing: 0.2em
+    line-height: 18px
+  .muve__list
+    margin-bottom: 30px
+    .muve__item
+      flex-basis: 50%
+      padding-left: 60px
+      margin-left: 0
+  .muve__iframe
+    width: 100%
+    height: 300px
+    iframe
+      height: 300px
+  .about__image img
+    transform: translate(-0px, -0px)
+  //pop-up
+  .pop-up
+    .feedback__holder
+      width: 100%
+      border-radius: 0
+      padding-right: 32px
+      padding-left: 32px
+  .pop-up .iso__form input
+    width: 100%
+
+
+@media #{$range-mobile}
+
+  .hero
+    background-position: center 70%
+    .description
+      margin-top: 200px
+      text-align: center
+    .btn + .btn
+      margin-bottom: 20px
+  .success h2
+    margin-bottom: 200px
+
+@media #{$range-laptop}
+  .hero h1
+    font-size: 68px
+  .hero__left-col
+    padding-top: 35px
+    padding-bottom: 125px
+
+  .hero .btn + .btn
+      margin-bottom: 34px
+  .animation-block
+    width: 56%
+    &::before
+      width: 110%
+      bottom: 28%
+
+  .about__title
+    font-size: 70px
+    margin-top: 40px
+    margin-bottom: 0
+  .merch__list
+    padding-top: 0
+  .iso
+    padding-top: 0
+  .muve__title
+    font-size: 56px
+    margin-bottom: 30px
+  .hero .description
+    margin-left: -40px
+  .partners--right
+    padding-left: 30px
+  .partners--left
+    padding-right: 30px
+  .partners__title
+    font-size: 56px
+
+
+
+
+
+
+
+
+
+
+
