@@ -179,7 +179,7 @@ header .mobile-nav .logo.logo-mini {
       text-transform: uppercase;
       line-height: 68px; }
   .mobile-nav.show {
-    background: url("../images/mobile_hero_bg.jpg") no-repeat center;
+    background: url("../images/mobile_bg.png") no-repeat center;
     -webkit-background-size: cover;
             background-size: cover;
     height: 100vh;
@@ -393,7 +393,7 @@ header .mobile-nav .logo.logo-mini {
     content: '';
     width: 70px;
     height: 104px;
-    background-image: url(../images/brend_linck_3.png);
+    background-image: url(../images/brend_linck_3.svg);
     background-repeat: no-repeat;
     -webkit-background-size: contain;
             background-size: contain;
@@ -550,7 +550,7 @@ header .mobile-nav .logo.logo-mini {
     z-index: 1;
     width: 43px;
     height: 64px;
-    background: url(../images/form_marker.png) no-repeat center;
+    background: url(../images/form_marker_1.svg) no-repeat center;
     -webkit-background-size: contain;
             background-size: contain; }
 
