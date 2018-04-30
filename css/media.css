@@ -271,6 +271,8 @@
     top: 10%; } }
 
 @media only screen and (max-width: 578px) {
+  .feedback {
+    margin-top: -290px; }
   .pop-up {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -624,6 +626,8 @@
       width: 50px; } }
 
 @media only screen and (min-width: 578px) and (max-width: 767px) {
+  .feedback {
+    margin-top: -290px; }
   .merchants {
     background-image: none;
     padding-bottom: 76px; }
