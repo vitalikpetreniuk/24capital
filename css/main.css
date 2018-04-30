@@ -832,11 +832,15 @@ header .mobile-nav .logo.logo-mini {
             flex-basis: 24%;
     position: relative;
     line-height: 46px; }
-    .muve__list .muve__item img {
+    .muve__list .muve__item i {
+      font-size: 25px;
+      color: #58dbc8;
       position: absolute;
       left: 0;
       top: 50%;
-      margin-top: -23px; }
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
 
 .muve__iframe {
   width: 82%;
