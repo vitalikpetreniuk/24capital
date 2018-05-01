@@ -56,6 +56,16 @@ button, a {
 section {
   position: relative; }
 
+.flex-cont {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 /*default style*/
 .btn {
   display: -webkit-box;
@@ -179,7 +189,7 @@ header .mobile-nav .logo.logo-mini {
       text-transform: uppercase;
       line-height: 68px; }
   .mobile-nav.show {
-    background: url("../images/bg-menu_tablet.png") no-repeat center -680px;
+    background: url("../images/bg-menu_tablet.png") no-repeat center -190px;
     -webkit-background-size: cover;
             background-size: cover;
     height: 100vh;
@@ -252,22 +262,15 @@ header .mobile-nav .logo.logo-mini {
     white-space: nowrap;
     font-family: 'PoppinsSemiBold',sans-serif;
     text-transform: uppercase;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-        -ms-flex-align: end;
-            align-items: flex-end;
     padding-bottom: 90px;
-    position: relative; }
+    position: absolute;
+    bottom: 0;
+    right: -30%; }
     .hero .description::before {
       content: '';
       position: absolute;
       left: -180px;
-      bottom: 16%;
+      top: 10%;
       width: 104px;
       height: 70px;
       background-image: url(../images/arrow_drow.png);
@@ -413,8 +416,8 @@ header .mobile-nav .logo.logo-mini {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   position: relative; }
   .brend-lincks.left {
     -webkit-box-pack: start;
@@ -516,11 +519,11 @@ header .mobile-nav .logo.logo-mini {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 60px; }
+  padding-bottom: 88px; }
 
 .partners--right {
   padding-left: 60px;
-  padding-bottom: 60px; }
+  padding-bottom: 88px; }
 
 .feedback {
   background-image: url(../images/feedback_bg.png);
@@ -778,6 +781,9 @@ header .mobile-nav .logo.logo-mini {
   line-height: 30px;
   margin-bottom: 30px; }
 
+.iso-item__title {
+  text-transform: none; }
+
 .muve .partners__subtitle {
   font-size: 30px; }
 
@@ -803,6 +809,10 @@ header .mobile-nav .logo.logo-mini {
   text-align: center;
   color: #1f2840;
   margin-bottom: 68px; }
+
+.contacts .muve__title {
+  text-align: left;
+  white-space: nowrap; }
 
 .muve__subtitle {
   text-align: center;
@@ -923,6 +933,8 @@ header .mobile-nav .logo.logo-mini {
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
+  .iso__content li .image.img-small img {
+    width: 60%; }
 
 .iso-form {
   background: -webkit-linear-gradient(327deg, #11d3ae 0%, #17b8b9 23%, #2d5fe0 100%);

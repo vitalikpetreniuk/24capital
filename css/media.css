@@ -9,12 +9,11 @@
   .hero__left-col {
     padding-top: 85px;
     padding-bottom: 140px; }
-  .hero .btn + .btn {
-    margin-bottom: 54px; }
   .hero .description {
     font-size: 36px;
     padding-bottom: 50px;
-    margin-left: -100px; }
+    right: 0;
+    margin-right: -40px; }
     .hero .description::before {
       left: -120px;
       bottom: 10%; }
@@ -65,6 +64,9 @@
     width: 90%; } }
 
 @media only screen and (max-width: 1199px) {
+  .benefits__title {
+    font-size: 24px;
+    line-height: 1; }
   .main-nav ul {
     margin-left: 20px;
     -webkit-box-pack: justify;
@@ -85,26 +87,78 @@
       width: 86%;
       -webkit-background-size: contain;
               background-size: contain; }
-    .contacts .muve__title {
-      margin-bottom: 40px; } }
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px; }
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 50px; }
+  .contacts .muve__title {
+    font-size: 48px;
+    margin-bottom: 40px; }
+  .contacts::after {
+    width: 76%; }
+  .contact__info {
+    font-size: 18px;
+    line-height: 30px; }
+  .hero h1 {
+    font-size: 70px;
+    line-height: 1; }
+  .hero .btn {
+    display: inline-block;
+    margin-right: 20px; }
+    .hero .btn + .btn {
+      margin-bottom: 42px; }
+  .hero .description {
+    font-size: 24px;
+    line-height: 30px;
+    white-space: normal; }
+    .hero .description br {
+      display: none; }
+  .trust {
+    padding-top: 44px;
+    padding-bottom: 70px; }
+  .trust__left-col {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .trust__left-col h2 {
+      margin-bottom: 0; }
+  .success .brend-lincks {
+    padding-top: 30px;
+    padding-bottom: 60px; }
+  .success h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 320px; }
+  .muve__title {
+    font-size: 35px;
+    margin-bottom: 70px; }
+  .syndication__gradient-text span {
+    font-size: 24px; } }
 
 @media only screen and (max-width: 992px) {
   .animation-block::before {
     width: 100%;
     bottom: 20%; }
-  .hero .btn + .btn {
-    margin-bottom: 14px; }
   .pop-up .feedback__holder {
     width: 80%;
     padding-right: 32px;
     padding-left: 32px; }
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px; }
   .about__subtitle {
     padding-top: 14px;
     font-size: 18px;
     margin-bottom: 30px; }
-  .benefits__title {
-    font-size: 25px;
-    line-height: 26px; }
   .muve__iframe {
     width: 88%;
     height: 360px; }
@@ -138,13 +192,24 @@
     left: 90%; }
   .merch__item:nth-child(2)::after {
     width: 290px; }
-  .muve__title {
-    font-size: 48px;
-    margin-bottom: 50px; }
+  .syndication .muve__title {
+    font-size: 35px;
+    margin-bottom: 18px; }
   .about__title {
-    font-size: 60px;
-    margin-top: 40px;
-    margin-bottom: 0; }
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 50px; }
+  .contacts .muve__title {
+    font-size: 48px;
+    margin-bottom: 40px; }
+  .contacts::after {
+    width: 76%; }
+  .contact__info {
+    font-size: 18px;
+    line-height: 30px; }
+  .muve__title {
+    font-size: 35px;
+    margin-bottom: 18px; }
   .contacts::after {
     width: 120%;
     height: 520px;
@@ -228,6 +293,7 @@
     margin-bottom: 260px;
     font-size: 24px; }
   .brend-lincks {
+    padding-bottom: 0;
     margin-bottom: 60px; }
     .brend-lincks img {
       max-width: 60%; }
@@ -258,13 +324,24 @@
     width: 100%;
     font-size: 17px;
     line-height: 26px; }
+  .hero h1 {
+    font-size: 70px;
+    line-height: 1; }
+  .hero .btn {
+    display: inline-block;
+    margin-right: 20px; }
+    .hero .btn + .btn {
+      margin-bottom: 14px; }
+  .hero .info {
+    font-size: 16px;
+    line-height: 22px;
+    width: 80%; }
   .hero .description {
-    font-size: 24px; }
-  .hero .description::before {
-    left: -120px;
-    width: 80px;
-    -webkit-background-size: contain;
-            background-size: contain; }
+    font-size: 24px;
+    line-height: 30px;
+    white-space: normal; }
+    .hero .description br {
+      display: none; }
   .animation-block {
     left: auto;
     right: 4%;
@@ -410,6 +487,7 @@
     height: 42px;
     line-height: 42px; }
   .about__title {
+    font-size: 30px;
     line-height: 30px;
     width: 80%;
     margin: auto;
@@ -431,20 +509,18 @@
               flex-basis: 100%; }
       .iso__content li:not(:last-child) {
         margin-bottom: 30px; }
-  .about__title {
-    font-size: 36px; }
   .contacts {
     padding-bottom: 50px; }
     .contacts::after {
       width: 164%;
       height: 400px; }
     .contacts .muve__title {
-      font-size: 36px;
+      font-size: 30px;
       margin-top: 250px;
       margin-bottom: 24px; }
     .contacts .contact__info {
       font-size: 16px;
-      line-height: 38px; }
+      line-height: 24px; }
   .partners .partners__subtitle {
     padding-top: 46px;
     font-size: 16px;
@@ -497,16 +573,20 @@
   .container {
     overflow: hidden; }
   .hero {
-    background: url("../images/mobile_hero_bg.jpg") no-repeat center;
+    background: #fff url("../images/bg-menu_tablet.png") no-repeat center;
+    background-position-y: -136px;
     -webkit-background-size: cover;
-            background-size: cover; }
+            background-size: cover;
+    padding-bottom: 200px; }
+    .hero .container {
+      overflow: visible; }
     .hero h1 {
       font-size: 36px;
       text-align: center; }
     .hero .btn {
       z-index: 1;
       margin: auto;
-      margin-bottom: 20px; }
+      margin-bottom: 14px; }
     .hero .info {
       color: #fff;
       font-size: 12px;
@@ -623,7 +703,14 @@
   header .mobile-nav .logo.logo-mini {
     display: block; }
     header .mobile-nav .logo.logo-mini img {
-      width: 50px; } }
+      width: 50px; }
+  .iso-item__title {
+    font-size: 22px;
+    line-height: 1; } }
+
+@media only screen and (max-width: 420px) {
+  .hero {
+    background-position-y: -190px; } }
 
 @media only screen and (min-width: 578px) and (max-width: 767px) {
   .feedback {
@@ -753,6 +840,12 @@
     padding-top: 0;
     padding-bottom: 100px; }
   .hero .description {
+    margin-top: 0;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: -300px;
     text-align: left;
     font-size: 22px; }
   .contacts {
@@ -813,9 +906,6 @@
               flex-basis: 100%; }
       .about__benefits li:not(:last-child) {
         margin-bottom: 30px; }
-    .about__benefits .benefits__title {
-      font-size: 25px;
-      line-height: 26px; }
   .muve .partners__subtitle {
     font-size: 14px;
     letter-spacing: 0.2em;
@@ -847,13 +937,18 @@
     width: 100%; } }
 
 @media only screen and (min-width: 440px) and (max-width: 578px) {
-  .hero {
-    background-position: center 70%; }
-    .hero .description {
-      margin-top: 200px;
-      text-align: center; }
-    .hero .btn + .btn {
-      margin-bottom: 20px; }
+  .hero .description {
+    margin-top: 0;
+    right: 50%;
+    text-align: center;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    bottom: -200px;
+    font-size: 22px; }
+  .hero .btn + .btn {
+    display: block;
+    margin-bottom: 14px; }
   .success h2 {
     margin-bottom: 200px; } }
 
@@ -863,29 +958,146 @@
   .hero__left-col {
     padding-top: 35px;
     padding-bottom: 125px; }
-  .hero .btn + .btn {
-    margin-bottom: 34px; }
   .animation-block {
     width: 56%; }
     .animation-block::before {
       width: 110%;
       bottom: 28%; }
-  .about__title {
-    font-size: 70px;
-    margin-top: 40px;
-    margin-bottom: 0; }
   .merch__list {
     padding-top: 0; }
   .iso {
     padding-top: 0; }
-  .muve__title {
-    font-size: 56px;
-    margin-bottom: 30px; }
   .hero .description {
-    margin-left: -40px; }
+    right: 0; }
   .partners--right {
     padding-left: 30px; }
   .partners--left {
     padding-right: 30px; }
   .partners__title {
-    font-size: 56px; } }
+    font-size: 56px; }
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 50px; }
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px; } }
+
+@media only screen and (min-width: 1279px) and (max-width: 1441px) {
+  .hero h1 {
+    font-size: 70px;
+    line-height: 1; }
+  .hero .btn {
+    display: inline-block;
+    margin-right: 20px; }
+    .hero .btn + .btn {
+      margin-bottom: 42px; }
+  .hero .info {
+    font-size: 20px;
+    line-height: 30px;
+    width: 48%; }
+  .hero .description {
+    margin-top: 0;
+    text-align: center;
+    top: 100%;
+    bottom: auto;
+    font-size: 24px;
+    line-height: 30px;
+    white-space: normal; }
+    .hero .description br {
+      display: none; }
+  .hero__left-col {
+    padding-top: 40px;
+    padding-bottom: 100px; }
+  .animation-block {
+    top: 0; }
+    .animation-block::before {
+      bottom: 28%; }
+  .trust {
+    padding-top: 44px;
+    padding-bottom: 70px; }
+    .trust h2 {
+      line-height: 1;
+      margin-bottom: 0; }
+  .trust__left-col {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .success .brend-lincks {
+    padding-top: 26px;
+    padding-bottom: 80px; }
+  .about {
+    padding-top: 150px;
+    padding-bottom: 80px; }
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 50px; }
+  .contacts .muve__title {
+    font-size: 48px;
+    margin-bottom: 40px; }
+  .contacts::after {
+    width: 76%; }
+  .contact__info {
+    font-size: 18px;
+    line-height: 30px; }
+  .muve__title {
+    font-size: 35px;
+    margin-bottom: 18px; }
+  .muve .muve__title {
+    font-size: 42px;
+    margin-bottom: 18px; }
+  .iso__content li .image {
+    height: 110px;
+    width: 100%; }
+  .iso__content li .image.img-small img {
+    width: 50%; }
+  .iso-item__title {
+    font-size: 25px;
+    line-height: 30px; }
+  .iso-form {
+    padding: 52px 0; }
+  .iso__subtitle {
+    margin-bottom: 50px; }
+  .merch__list {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px; }
+  .merch-list__title {
+    font-size: 45px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 38px; }
+  .merch__item {
+    padding-top: 0; }
+    .merch__item img {
+      width: 50px; }
+  .merch-list__cont {
+    font-size: 15px;
+    line-height: 22px; }
+  .merch__item:nth-child(even) {
+    margin-top: 220px; }
+  .merch__item:nth-child(2)::after {
+    width: 260px;
+    top: 0; }
+  .merch__item:nth-child(1)::after {
+    width: 300px;
+    left: 100%;
+    top: 0; }
+  .benefits__title {
+    font-size: 24px;
+    line-height: 1; }
+  .muve .partners__subtitle {
+    font-size: 20px;
+    letter-spacing: 0.4em;
+    padding-bottom: 40px;
+    padding-top: 20px; }
+  .about.about-us {
+    padding-top: 150px;
+    padding-bottom: 200px; } }
